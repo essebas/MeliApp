@@ -4,6 +4,10 @@ ext {
     minSdk = 21
     targetSdk = 32
 
+    kotlin_retrofit ='2.9.0'
+    kotlin_retrofit_serialization ='0.8.0'
+    okhttp3_interceptor = '4.10.0'
+
     //Coroutines
     kotlinx_coroutines_android = '1.6.4'
 
