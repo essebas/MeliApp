@@ -3,4 +3,10 @@ ext {
     compileSdk = 32
     minSdk = 21
     targetSdk = 32
+
+    //Coroutines
+    kotlinx_coroutines_android = '1.6.4'
+
+    //Hilt
+    hilt_android_plugin = '2.42'
 }
