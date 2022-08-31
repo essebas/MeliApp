@@ -1,0 +1,6 @@
+ext {
+    //Project configuration
+    compileSdk = 32
+    minSdk = 21
+    targetSdk = 32
+}
