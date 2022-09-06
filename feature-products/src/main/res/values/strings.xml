@@ -1,0 +1,6 @@
+<resources>
+    <string name="edt_search_product">Buscar Producto</string>
+    <string name="txv_empty_search_message">No se encontraron resultados</string>
+    <string name="txv_product_quantity">Cantidad: %s</string>
+    <string name="txv_query_results">%s Resultados</string>
+</resources>

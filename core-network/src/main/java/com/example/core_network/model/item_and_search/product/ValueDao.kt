@@ -11,7 +11,7 @@ data class ValueDao(
     @SerialName("name")
     val name: String,
     @SerialName("source")
-    val source: Int,
+    val source: Long,
     @SerialName("struct")
     val struct: StructDao?
 )

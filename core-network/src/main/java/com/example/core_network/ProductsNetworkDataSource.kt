@@ -1,8 +1,8 @@
 package com.example.core_network
 
+import com.example.core_common.result.Result
 import com.example.core_network.model.item_and_search.ItemAndSearchBaseResponse
-import retrofit2.Response
 
 interface ProductsNetworkDataSource {
-    suspend fun getProducts(searchQuery: String): Response<ItemAndSearchBaseResponse>
+    suspend fun getProducts(searchQuery: String, offset: String?, limit: String?): Result<ItemAndSearchBaseResponse>
 }

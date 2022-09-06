@@ -8,5 +8,6 @@ import kotlin.annotation.AnnotationRetention.RUNTIME
 annotation class Dispatcher(val appDispatchers: AppDispatchers)
 
 enum class AppDispatchers {
-    IO
+    IO,
+    MAIN
 }

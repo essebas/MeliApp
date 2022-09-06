@@ -7,7 +7,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class StructDao(
     @SerialName("number")
-    val number: Int,
+    val number: Double,
     @SerialName("unit")
     val unit: String
 )

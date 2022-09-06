@@ -9,6 +9,10 @@ apply plugin: 'kotlinx-serialization'
 
 android {
     compileSdk rootProject.compileSdk
+
+    defaultConfig {
+        buildConfigField("String", "BASE_URL", "\"https://api.mercadolibre.com/sites/\"")
+    }
 }
 
 dependencies {
@@ -16,6 +20,7 @@ dependencies {
 
     implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:$rootProject.kotlinx_serialization_json"
     implementation "com.squareup.retrofit2:retrofit:$rootProject.kotlin_retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.kotlin_retrofit"
     implementation "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:$rootProject.kotlin_retrofit_serialization"
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttp3_interceptor"
     implementation "com.google.dagger:hilt-android:$rootProject.hilt_android_plugin"

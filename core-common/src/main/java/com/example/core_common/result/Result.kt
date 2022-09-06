@@ -1,9 +1,11 @@
 package com.example.core_common.result
 
-data class Result<T>(var status: Status, var data: T? = null, val message: String? = "") {
+import com.example.core_common.utils.StringUtil
+
+data class Result<T>(var status: Status, var data: T? = null, val message: String? = StringUtil.EMPTY_STRING) {
     sealed class Status {
         object SUCCESS : Status()
-        class ERROR(val throwable: Throwable?, val code: Int, val errorBody: String = "") : Status()
+        data class ERROR(val throwable: Throwable?, val code: Int, val errorBody: String = StringUtil.EMPTY_STRING) : Status()
     }
 
     companion object {
@@ -18,7 +20,7 @@ data class Result<T>(var status: Status, var data: T? = null, val message: Strin
         fun <T> error(
             exception: Exception,
             code: Int,
-            errorBody: String = "",
+            errorBody: String = StringUtil.EMPTY_STRING,
             data: T? = null
         ): Result<T> {
             return Result(

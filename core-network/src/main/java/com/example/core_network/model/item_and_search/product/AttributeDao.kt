@@ -15,7 +15,7 @@ data class AttributeDao(
     @SerialName("name")
     val name: String,
     @SerialName("source")
-    val source: Int,
+    val source: Long,
     @SerialName("value_id")
     val valueId: String,
     @SerialName("value_name")
