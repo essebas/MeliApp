@@ -14,4 +14,4 @@ The architecture of this application is based, apply and development with the fo
 ### Modules
 Modules are collection of source files and build settings that allow you to divide a project into discrete units of functionality (Android documentation). In this case apart from dividing by functionality/responsibility, existing the following dependence between them:
 
-![Modules]()
+![Modules](""https://github.com/essebas/MeliApp/blob/trunk/readme-images/Architecture_Diagram.jpg")
