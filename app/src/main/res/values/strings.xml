@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MeliApp</string>
     <string name="title_products_main">Products Main</string>
+    <string name="basic_app">Vista para cordinar feature modules</string>
 </resources>
