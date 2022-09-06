@@ -15,3 +15,12 @@ The architecture of this application is based, apply and development with the fo
 Modules are collection of source files and build settings that allow you to divide a project into discrete units of functionality (Android documentation). In this case apart from dividing by functionality/responsibility, existing the following dependence between them:
 
 ![Modules](https://github.com/essebas/MeliApp/blob/trunk/readme-images/Architecture_Diagram.jpg)
+
+### Core Common
+Contains code and resources which are shared between all modules. Reusing this way resources, layouts, views, utils and components in the different modules, without the need to duplicate code.
+
+![Modules](https://github.com/essebas/MeliApp/blob/trunk/readme-images/common.jpg)
+
+### Architecture components
+
+![Modules](https://github.com/essebas/MeliApp/blob/trunk/readme-images/Architecture_component.jpg)
