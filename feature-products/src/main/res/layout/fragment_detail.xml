@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.product_detail.DetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/product_image"/>
+
+        <View
+            android:id="@+id/divider_image_text"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/cardview_shadow_start_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_product" />
+
+        <TextView
+            android:id="@+id/txv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_image_text"
+            tools:text="iPhone 8"/>
+
+        <TextView
+            android:id="@+id/txv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@id/txv_title"
+            app:layout_constraintStart_toStartOf="@id/txv_title"
+            app:layout_constraintTop_toBottomOf="@id/txv_title"
+            tools:text="$1.800.000"/>
+
+        <TextView
+            android:id="@+id/txv_condition"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/txv_title"
+            app:layout_constraintTop_toTopOf="@id/txv_title"
+            app:layout_constraintBottom_toBottomOf="@id/txv_price"
+            tools:text="Nuevo"/>
+
+        <TextView
+            android:id="@+id/txv_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@id/txv_title"
+            app:layout_constraintStart_toStartOf="@id/txv_title"
+            app:layout_constraintTop_toBottomOf="@id/txv_price"
+            tools:text="Cantidad: 8"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdk rootProject.compileSdk
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.kotlinx_coroutines_android"
+
+    //ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.androidx_lifecycle_extensions_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.androidx_lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.androidx_lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$rootProject.androidx_lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$rootProject.androidx_lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$rootProject.androidx_lifecycle_version"
+
+    //Hilt
+    implementation "com.google.dagger:hilt-android:$rootProject.hilt_android_plugin"
+    kapt "com.google.dagger:hilt-compiler:$rootProject.hilt_android_plugin"
+}
